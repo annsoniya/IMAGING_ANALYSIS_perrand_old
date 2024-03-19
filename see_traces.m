@@ -1,5 +1,5 @@
 % Initialize accumulators
-
+% set of    stimulus  
 periodic_stimset_4=[1,2,9,10];
 aperiodic_stimset_4=[11,12];
 periodic_stimset_3=[3,4,5,6,7,8];
