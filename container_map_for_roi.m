@@ -1,4 +1,6 @@
-fname_to_rows_map = containers.Map;
+
+function rows= container_map_for_roi(db);
+fname_to_rows_map= containers.Map;
 
 
 for u = 1:size(db,1)
@@ -16,5 +18,9 @@ end
 
 all_keys = keys(fname_to_rows_map);% all keys is each roi names 
 % to get cells for each roi
- fname_to_rows_map(all_keys{k})
+for k = 1:length(all_keys)
+ rows{k}=fname_to_rows_map(all_keys{k});
+end
+end
+
 
