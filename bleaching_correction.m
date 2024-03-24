@@ -3,7 +3,7 @@
 clear all;
 clc;
 cell=load('SigWith5Frms.mat');
-cellstimcode=cell.SigWith5Frms(:,5);% get the dff column only from teh database
+cellstimcode=cell.SigWith5Frms(:,5);% get the dff column only from the database
 
 celldata=cell.SigWith5Frms(:,3);
 % define a cell array to store the corrected data
@@ -14,7 +14,7 @@ for jj=1:size(celldata,1) % for all cells
     %imagesc(squeeze(mean(allcdff)));
     % do correction for all iters seperately  
     for ii=1:size(allcdff,1)      % for all iterations seperately 
-         pp=polyfit(1:10,(log(1+allcdff(ii,1:10))),1);
+        pp=polyfit(1:10,(log(1+allcdff(ii,1:10))),1);
         blcorr=exp(pp(1)*[1:40]+pp(2))-1;
         allcdff(ii,:)=allcdff(ii,:)-blcorr;       
     end

@@ -4,9 +4,9 @@ close all;
 clc;
 data=load('thy1_perrand_awake_database.mat');
 % figuring out the same roi cells from files using container map
-[fname_to_rows_map,rows] = containers.Map;
-for r=1:size(rows,2)% rois 
-    c=rows{r};
+rows = containers.Map(data.db);
+for r=1:size(rows1,2)% rois 
+    c=rows1{r};
     baselineFrames = zeros(length(c), 3);
     baselineFrames2 = zeros(length(c), 3);
 

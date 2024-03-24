@@ -24,7 +24,6 @@ categorising teh segments into periodic and random stimulus line output
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | cells_after_bleach_crrtn            | The database with all cells after bleaching correction / signal not done in this database.    |
 | sig_cell_stimwise_40frms            | The final database after bleaching correction arranged according to stimulus.                 |
-
-roi_based.m                           for any roi based analysis
-container_map_for_roi                   to get all roi based analysis in one place
-
+-----------------------------------------------------------------------------------------------|
+| roi_based.m                         | Code for performing ROI-based analysis.                                                      |
+| container_map_for_roi               | Container to store all ROI-based analysis results in one place.                               |
